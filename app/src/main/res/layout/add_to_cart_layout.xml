@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="#ffcc99"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_cart_product"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <TextView
+                android:id="@+id/txt_cart_product_name"
+                android:text="Appetizers"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/txt_count"
+                    android:layout_alignParentRight="true"
+
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    app:backGroundColor="@color/colorAccent">
+
+                </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+            </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+
+<EditText
+    android:id="@+id/edt_comment"
+    android:background="@android:color/white"
+    android:hint="Add Comment"
+    android:lines="1"
+    android:minLines="2"
+    android:inputType="textMultiLine"
+    android:layout_margin="8dp"
+    android:padding="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</EditText>
+
+    <ScrollView
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <!--Group1- Portion-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                
+                <TextView
+                    android:text="Choose Size"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+
+                <TextView
+                    android:text="REQUIRED"
+                    android:textStyle="bold"
+                    android:padding="4dp"
+                    android:textSize="14sp"
+                    android:background="@drawable/txt_round_grey"
+                    android:textColor="@android:color/white"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+                    
+                </RelativeLayout>
+
+          <RelativeLayout
+              android:layout_marginTop="8dp"
+              android:background="@android:color/white"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+              <RadioGroup
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+                  <RadioButton
+                      android:id="@+id/rdi_sizeM"
+                      android:text="Size M"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+
+                  <RadioButton
+                      android:id="@+id/rdi_sizeL"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Size L"/>
+
+
+              </RadioGroup>
+
+              <LinearLayout
+                  android:orientation="vertical"
+                  android:layout_alignParentRight="true"
+                  android:layout_marginLeft="8dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+
+                  <TextView
+
+                      android:layout_width="wrap_content"
+                      android:layout_height="34dp"
+                      android:text="+$0.00"
+                      android:textSize="18sp" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="+$2.00"
+                      android:textSize="18sp" />
+
+              </LinearLayout>
+
+          </RelativeLayout>
+
+            <!--Group2- Where-->
+            <RelativeLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Choose where you want to eat"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+
+                <TextView
+                    android:text="REQUIRED"
+                    android:textStyle="bold"
+                    android:padding="4dp"
+                    android:textSize="14sp"
+                    android:background="@drawable/txt_round_grey"
+                    android:textColor="@android:color/white"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="8dp"
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RadioGroup
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rdi_here"
+                        android:text="Here"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:id="@+id/rdi_togo"
+                        android:text="To Go"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+
+
+
+                </RadioGroup>
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+            <!--Group3- topping-->
+            <RelativeLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Choose Extras"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+
+               
+
+            </RelativeLayout>
+            
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_topping"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

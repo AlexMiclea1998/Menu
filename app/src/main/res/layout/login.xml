@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="16dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edt_nameLogin"
+                android:hint="Name"
+                android:textSize="18sp"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:met_floatingLabel="highlight"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edt_pass"
+                android:hint="Password"
+                android:textSize="18sp"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:met_floatingLabel="highlight"
+                />
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#ff5f64"
+            android:text="Login"
+            android:onClick="OnLogin2"></Button>
+
+        <Button
+            android:id="@+id/btn_cant_login2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#ff5f64"
+            android:text="Forgot Password"
+            android:onClick="OnForgot"></Button>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
